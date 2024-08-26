@@ -149,7 +149,8 @@ export class TodoListComponent {
         showCancelButton: true,
         confirmButtonColor: '#3085d6',
         cancelButtonColor: '#d33',
-        confirmButtonText: '¡Sí, bórralo!'
+        confirmButtonText: '¡Sí, bórralo!',
+        cancelButtonText: 'Cancelar'
       }).then((result) => {
         if (result.isConfirmed) {
           // Swal.fire('¡Eliminado!', 'Tu archivo ha sido eliminado.', 'success');
