@@ -40,7 +40,7 @@
     </div>
     <mat-form-field appearance="fill" class="full-width">
         <mat-label>Descripción</mat-label>
-        <textarea matInput formControlName="description" placeholder="Ex. It makes me feel..."></textarea>
+        <textarea matInput formControlName="description" placeholder="Ejemplo descripción de la tarea..."></textarea>
         <mat-error *ngIf="todoForm.get('description')?.hasError('required')">
             La descripción es requerida
         </mat-error>

@@ -53,10 +53,8 @@ export class TodoListComponent {
   */
   ngOnInit(): void {
     this.onResize();
-
     this.todoSubscription = this.store.select('todo')
         .subscribe( todo => {
-          console.log('subscrito a tasks, ', todo);
           this.list = todo.tasks;
           if(this.paginator) {
             this.paginator.pageIndex = 0; // Reset to the first page
@@ -73,7 +71,6 @@ export class TodoListComponent {
    */
   onResize() {
     const size = window.innerWidth;
-    console.log(size);
     if(size <= 900){
       this.breakpoint = 1;
 
@@ -110,7 +107,6 @@ export class TodoListComponent {
   updatePaginatedTasks(): void {
     const startIndex = this.paginator.pageIndex * this.paginator.pageSize;
     const endIndex = startIndex + this.paginator.pageSize;
-    console.log(startIndex, endIndex);
     this.paginatedTasks = this.list.slice(startIndex, endIndex);
   }
 

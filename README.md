@@ -2,6 +2,8 @@
 
 Este proyecto fue generado con [Angular CLI](https://github.com/angular/angular-cli) versión 17.3.8.
 
+interactuar con la app (https://atom-ae7a4.web.app/)
+
 ## Descripción del Proyecto:
 
 AppTask es una aplicación de gestión de tareas desarrollada con Angular. Su propósito principal es permitir a los usuarios gestionar sus tareas diarias de manera eficiente. La aplicación proporciona funcionalidades para agregar, visualizar, actualizar y eliminar tareas, ofreciendo una interfaz intuitiva y fácil de usar.
@@ -37,6 +39,32 @@ RxJS: Biblioteca para manejar programación reactiva y operaciones asíncronas.
 ## Requisitos:
 Node.js y Angular CLI instalados en el entorno de desarrollo.
 Firebase o un servidor similar para la autenticación y almacenamiento en la nube (opcional, dependiendo de la configuración del proyecto).
+
+## Estructura del Proyecto
+### src/app: Carpeta principal que contiene todo el código fuente de la aplicación.
+### auth: Este módulo se encarga de la autenticación y gestión de usuarios. Incluye:
+
+#### components: Contiene los componentes relacionados con la autenticación, como el formulario de login.
+#### services: Servicios que manejan la lógica relacionada con la autenticación, como el inicio y cierre de sesión.
+#### guards: Implementa guardias para proteger rutas que requieren autenticación.
+#### auth.actions.ts y auth.reducer.ts: Archivos que contienen las acciones y reducers de NgRx para manejar el estado de autenticación.
+
+### todos: Módulo que gestiona las listas de tareas de los usuarios. Incluye:
+
+#### components: Componentes que muestran la lista de tareas, permiten la edición y creación de nuevas tareas.
+#### services: Servicios que interactúan con APIs para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre las tareas.
+#### todo.actions.ts y todo.reducer.ts: Archivos que manejan las acciones y reducers de NgRx para la gestión del estado de las tareas.
+
+### shared: Carpeta que contiene elementos compartidos entre los diferentes módulos de la aplicación.
+#### services: Servicios comunes como notificaciones y manejo de errores.
+#### ui: Archivos relacionados con la interfaz de usuario y el estado de la misma, incluyendo acciones y reducers de NgRx.
+
+### reducers: Carpeta donde se define el estado global de la aplicación a través de NgRx.
+#### index.ts: Archivo que combina todos los reducers en un único reducer raíz.
+
+###app-routing.module.ts: Archivo de configuración de rutas de la aplicación, que define cómo se navega entre los diferentes componentes y módulos.
+
+Esta estructura modular permite una organización clara y facilita el mantenimiento y la escalabilidad del proyecto a medida que crece la aplicación.
 
 ## Servidor de desarrollo
 

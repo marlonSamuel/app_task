@@ -24,7 +24,8 @@ export const taskInitialState : Task = {
     title: '',
     description: '',
     task_date: '',
-    userId: ''
+    userId: '',
+    created_date: ''
 };
 
 /**

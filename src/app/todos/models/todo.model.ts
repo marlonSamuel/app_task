@@ -2,21 +2,22 @@
  * Represents a task with details such as title, description, date, and completion status.
 */
 export interface Task {
-    id: string
-    createdAt?: CreatedAt
-    description: string
-    task_date: string
-    completed?: boolean
-    title: string
-    userId: string
+    id: string;
+    createdAt?: CreatedAt;
+    description: string;
+    created_date: string;
+    task_date: string;
+    completed?: boolean;
+    title: string;
+    userId: string;
   }
   
 /**
  * Represents the creation timestamp of a task with seconds and nanoseconds.
  */
   export interface CreatedAt {
-    _seconds: number
-    _nanoseconds: number
+    _seconds: number;
+    _nanoseconds: number;
   }
 
  /**
