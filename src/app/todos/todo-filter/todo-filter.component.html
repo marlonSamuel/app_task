@@ -1,0 +1,12 @@
+<mat-divider></mat-divider>
+<mat-tab-group (selectedTabChange)="onTabChange($event)">
+    <div *ngFor="let tab of tabs">
+        <mat-tab>
+            <ng-template mat-tab-label>
+                <mat-icon class="example-tab-icon">{{tab.icon}}</mat-icon>
+                {{tab.name}}
+            </ng-template>
+        </mat-tab>
+    </div>
+</mat-tab-group>
+<mat-divider></mat-divider>

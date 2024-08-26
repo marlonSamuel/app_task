@@ -1,0 +1,15 @@
+@import "~@angular/material/theming";
+// Define el tema de Angular Material
+@include mat-core();
+// Define tus colores primarios y acentos
+$my-primary: mat-palette($mat-orange, 600, 500, 700);
+$my-accent: mat-palette($mat-orange, A200, A100, A400);
+$my-warn: mat-palette($mat-red);
+// Define el tema claro
+$my-light-theme: mat-light-theme($my-primary, $my-accent, $my-warn);
+// Aplica el tema al diseño
+@include angular-material-theme($my-light-theme);
+// Estilos adicionales globales
+body {
+    background-color: white; // Fondo blanco
+}

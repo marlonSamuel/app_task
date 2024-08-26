@@ -1,0 +1,9 @@
+<mat-toolbar color="primary">
+    <span>TODO LIST</span>
+    <span class="spacer"></span>
+    <!-- Esto empuja el contenido siguiente a la derecha -->
+    {{user.email}}<button mat-button (click)="logout()">
+    <mat-icon>logout</mat-icon>
+    Salir
+  </button>
+</mat-toolbar>

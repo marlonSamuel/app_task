@@ -1,0 +1,21 @@
+mat-toolbar.footer {
+    position: fixed;
+    bottom: 0;
+    z-index: 1;
+    /* Asegura que el footer esté por encima del contenido */
+}
+
+.content {
+    margin-top: 64px;
+    margin-bottom: 64px;
+    /* Ajusta según la altura de tu header */
+    margin-bottom: 64px;
+    /* Ajusta según la altura de tu footer */
+    padding: 16px;
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte al tamaño total del contenido */
+    min-height: calc(100vh - 128px);
+    /* Altura del viewport menos la altura del header y footer */
+    z-index: 0;
+    /* Asegura que el contenido esté debajo del header y el footer */
+}

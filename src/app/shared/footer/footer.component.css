@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    /* Centra el contenido horizontalmente */
+    align-items: center;
+    /* Centra el contenido verticalmente */
+    height: 64px;
+    /* Ajusta la altura según sea necesario */
+}
+
+.footer-content {
+    text-align: center;
+}

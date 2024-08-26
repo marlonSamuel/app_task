@@ -1,0 +1,14 @@
+.example-card {
+    max-width: 400px;
+}
+
+.example-card-footer {
+    padding: 16px;
+}
+
+.paginator-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* Puedes ajustar el margen según sea necesario */
+}
