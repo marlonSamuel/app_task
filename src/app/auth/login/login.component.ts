@@ -76,7 +76,7 @@ export class LoginComponent {
           
           this.notificationService.showSuccess('Logín exitoso');
           if(response.user.isNew){
-            Swal.fire('Creado!', 'Nuevo usuario ha sido creado.', 'success');
+            Swal.fire('BIEN!!!', 'Has creado tu cuenta satisfactoriamente '+response.user.email+' ya puedes empezar a crear y gestionar tus tareas :)', 'success');
           }
           this.router.navigate(['']);
         },
