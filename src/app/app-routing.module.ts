@@ -24,7 +24,8 @@ const routes: Routes = [
         canActivate: [authGuard] },
     {
         path: '',
-        component: TodoIndexComponent,
+        loadChildren: () => import('./todos/todo.module')
+                            .then(m => m.TodoModule),
         canActivate: [ authGuard ]
     },
     { path: '**', redirectTo: '' }

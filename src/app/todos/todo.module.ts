@@ -12,14 +12,13 @@ import { MatIcon } from '@angular/material/icon';
 import { IConfig, NgxMaskDirective, NgxMaskPipe, provideEnvironmentNgxMask } from 'ngx-mask';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoadingSpinnerModule } from '@app/shared/loading/loading-spinner.module';
+import { TodoRoutingModule } from './routing.module';
 
 const maskConfigFunction: () => Partial<IConfig> = () => {
   return {
     validation: false,
   };
 };
-
-
 
 @NgModule({
   declarations: [
@@ -35,7 +34,8 @@ const maskConfigFunction: () => Partial<IConfig> = () => {
     MatIcon,
     NgxMaskDirective, NgxMaskPipe,
     ReactiveFormsModule,
-    LoadingSpinnerModule
+    LoadingSpinnerModule,
+    TodoRoutingModule
   ],
   exports: [
     TodoIndexComponent

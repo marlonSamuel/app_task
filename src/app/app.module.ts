@@ -6,7 +6,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { MaterialModule } from './material.module';
-import { TodoModule } from './todos/todo.module';
 import { AuthModule } from './auth/auth.module';
 import { HttpClientModule, provideHttpClient, withInterceptors } from '@angular/common/http';
 import { authInterceptor } from './core/interceptors/auth.interceptor';
@@ -32,7 +31,6 @@ import { ToastrModule } from 'ngx-toastr'; // Importa ToastrModule
     AppRoutingModule,
     MaterialModule,
     HttpClientModule,
-    TodoModule,
     LoadingSpinnerModule,
     AuthModule,
     MatIcon,
